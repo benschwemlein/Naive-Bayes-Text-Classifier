@@ -1,0 +1,28 @@
+Implementation projects were evaluated based on significance, design, correctness, appropriate evaluation/testing and documentation.
+
+- Significance: 20/20
+- Design: 20/20
+- Correctness: 20/20
+- Evaluation: 20/20
+- Documentation: 20/20
+
+Total: 100/100
+
+This is a well-designed, excellent implementation.  Congratulations!!
+I ran your code with the 20 newsgroup corpus.  I was quite impressed that the system ran reasonably fast -- faster than I had expected for such a large corpus. 
+
+The documentation is comprehensive, covering important points with examples and discussions.
+
+A few comments.
+
+(1) The vocabulary size.  I'm not sure where the difference of 10,000 or so words is coming from, but it could be (maybe) the minimum number of occurrences.  I know the textbook says "fewer than three times" but it could have been "four times".  I vaguely remember a student in the previous class mentioned something about the vocabulary too.  I don't remember exactly what it was, but I think he told me about this cut-off value.
+It could be the difference in tokenization too.  Other than that, I cannot think of any other reason, since your code seems to be handling HashMap and Word objects correctly.
+
+(2) The accuracy of 89.5% (about the same as the textbook), using 10,000 more words, is not really bad at all.  Rather it sounds just right.  When the number of features is (still) _this_ large, most of them are really irrelevant to the target class.  I'd say the most important words are only 3000 or so (at most).  Since there are so, so many irrelevant words in the 38,500 words to begin with, another 10,000 irrelevant words won't affect the overall accuracy.  That's what I have seen in the research on Feature Selection (for document classification).
+
+(3) Your observation on Linux vs. Windows file order is interesting.  Maybe the case-sensitivity to filenames has something to do with it -- Isn't Windows case-insensitive to file names (while Linux/Unix is case-sensitive)??
+
+Anyhow, excellent work.
+Hope you enjoyed the project and the class as well!
+-----------------------------
+Implementation: NB text classifier
