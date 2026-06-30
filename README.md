@@ -1,6 +1,6 @@
 # Naive Bayes Text Classifier
 
-A Naive Bayes document classifier built as part of my machine learning research at DePaul University (M.S. Computer Science, ~2008). Classifies text documents into categories using Laplace-smoothed word probability estimates.
+A Naive Bayes document classifier built for my Machine Learning course at DePaul University (M.S. Computer Science, ~2008). Classifies text documents into categories using Laplace-smoothed word probability estimates.
 
 ### How it works
 
